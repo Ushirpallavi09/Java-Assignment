@@ -1,20 +1,22 @@
 package Assignment;
 
+import java.util.Scanner;
+
 public class StringReverse {
+
 	public static void main(String args[])
 	{
-	String s1="pihu";
-	StringBuffer sb =new StringBuffer(s1);
-	sb.reverse();
-	System.out.println(sb);
-	s1.toUpperCase();
-	System.out.println("The Uppercase is:"+s1.toUpperCase());
-	
-	
-
-	
-	
-	
-	}
+		     Scanner sc=new Scanner(System.in);
+		     System.out.println("Please Enter String value");
+		     String p=sc.nextLine();
+		     
+		     StringBuilder sb=new StringBuilder(p);
+		     sb.reverse();
+		     String result=sb.toString();
+		     
+		     System.out.println("Reverse String is : "+result);
+		     System.out.println("The UpperCase is : "+p.toUpperCase());
+		   }
 
 }
+
